@@ -30,20 +30,38 @@ public class InssSolucaoActivity extends Activity implements OnClickListener{
 
     private void operation() {
         EditText salario = (EditText)findViewById(R.id.salario);
-        int valorSalario = Integer.parseInt(salario.getText().toString());
+        float valorSalario = Integer.parseInt(salario.getText().toString());
 
-       if (valorSalario < 800 && valorSalario <= 1200) {
-                // Salario Bruto
-               TextView infoSalarioBruto = (TextView)findViewById(R.id.edtSalarioBruto);
-               infoSalarioBruto.setText("Salario Bruto: " + salario);
+        if (valorSalario <= 800){
+            // Salario Bruto
+            TextView infoSalarioBruto = (TextView)findViewById(R.id.edtSalarioBruto);
+            infoSalarioBruto.setText("Salario Bruto: " + valorSalario);
 
-                // Desnconto INSS
-                TextView classificDesc = (TextView)findViewById(R.id.edtClassificaDesc);
-                classificDesc.setText("Classificação do Desconto: ISENTO");
+            // Desnconto INSS
+            TextView classificDesc = (TextView)findViewById(R.id.edtClassificaDesc);
+            classificDesc.setText("Classificação do Desconto: ISENTO");
 
-                // Valor Sal. Liq.
-                TextView infoSalarioLiq = (TextView)findViewById(R.id.edtSalarioLiq);
-                infoSalarioBruto.setText("Salario Liquido: 800");
+            // Valor Sal. Liq.
+            TextView infoSalarioLiq = (TextView)findViewById(R.id.edtSalarioLiq);
+            infoSalarioLiq.setText("Salario Liquido: " + valorSalario);
+        }
+       else  if (valorSalario > 800 && valorSalario <= 1200) {
+
+          
+
+
+            // Salario Bruto
+            TextView infoSalarioBruto = (TextView) findViewById(R.id.edtSalarioBruto);
+            infoSalarioBruto.setText("Salario Bruto: " + valorSalario);
+
+            // Desnconto INSS
+            TextView classificDesc = (TextView)findViewById(R.id.edtClassificaDesc);
+            classificDesc.setText("Classificação do Desconto: ISENTO");
+
+            // Valor Sal. Liq.
+            TextView infoSalarioLiq = (TextView)findViewById(R.id.edtSalarioLiq);
+            infoSalarioLiq.setText("Salario Liquido: " + valorSalario);
+
 
         } else  if (valorSalario > 1200 && valorSalario <= 2000){
 

@@ -14,7 +14,7 @@ import android.widget.ListView;
 
 public class AlgorithmProjectMainActivity extends ListActivity {
 
-    private static final String[] options = new String[]{"1 - ", "2 - ", "3 - ", "Exit"};
+    private static final String[] options = new String[]{"1 - INSS", "2 - ", "3 - ", "Exit"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
