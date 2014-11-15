@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class InssSolucaoActivity extends Activity implements OnClickListener{
@@ -31,17 +32,17 @@ public class InssSolucaoActivity extends Activity implements OnClickListener{
         EditText salario = (EditText)findViewById(R.id.salario);
         int valorSalario = Integer.parseInt(salario.getText().toString());
 
-       if (valorSalario > 800 && valorSalario <= 1200) {
+       if (valorSalario < 800 && valorSalario <= 1200) {
                 // Salario Bruto
-                EditText infoSalarioBruto = (EditText)findViewById(R.id.edtSalarioBruto);
-                infoSalarioBruto.setText("Salario Bruto: " + salario);
+               TextView infoSalarioBruto = (TextView)findViewById(R.id.edtSalarioBruto);
+               infoSalarioBruto.setText("Salario Bruto: " + salario);
 
                 // Desnconto INSS
-                EditText classificDesc = (EditText)findViewById(R.id.edtClassificaDesc);
+                TextView classificDesc = (TextView)findViewById(R.id.edtClassificaDesc);
                 classificDesc.setText("Classificação do Desconto: ISENTO");
 
                 // Valor Sal. Liq.
-                EditText infoSalarioLiq = (EditText)findViewById(R.id.edtSalarioLiq);
+                TextView infoSalarioLiq = (TextView)findViewById(R.id.edtSalarioLiq);
                 infoSalarioBruto.setText("Salario Liquido: 800");
 
         } else  if (valorSalario > 1200 && valorSalario <= 2000){
