@@ -24,6 +24,10 @@
             android:name=".inss.InssSolucaoActivity"
             android:label="@string/title_activity_inss_solucao" >
         </activity>
+        <activity
+            android:name=".pensao.PensaoActivity"
+            android:label="@string/title_activity_pensao" >
+        </activity>
     </application>
 
 </manifest>

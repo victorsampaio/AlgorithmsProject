@@ -47,7 +47,7 @@ public class InssSolucaoActivity extends Activity implements OnClickListener{
         }
        else  if (valorSalario > 800 && valorSalario <= 1200) {
 
-          
+
 
 
             // Salario Bruto

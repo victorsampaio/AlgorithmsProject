@@ -3,6 +3,7 @@ package android.com.algorithmsproject;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.com.algorithmsproject.inss.InssProject;
+import android.com.algorithmsproject.pensao.PensaoActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -33,7 +34,7 @@ public class AlgorithmProjectMainActivity extends ListActivity {
                   startActivity(new Intent(this, InssProject.class));
                 break;
             case 1:
-
+                    startActivity(new Intent(this, PensaoActivity.class));
                 break;
             case 2:
 
