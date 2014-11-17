@@ -30,7 +30,7 @@ public class InssSolucaoActivity extends Activity implements OnClickListener{
 
     private void operation() {
         EditText salario = (EditText)findViewById(R.id.salario);
-        float valorSalario = Integer.parseInt(salario.getText().toString());
+        float valorSalario = Float.parseFloat(salario.getText().toString());
 
         if (valorSalario <= 800){
             // Salario Bruto

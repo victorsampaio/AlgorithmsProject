@@ -1,19 +1,33 @@
 package android.com.algorithmsproject.pensao;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.com.algorithmsproject.R;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class PensaoActivity extends Activity {
+public class PensaoActivity extends Activity implements OnClickListener{
 
+    Button btSolucao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pensao);
+
+        btSolucao = (Button)findViewById(R.id.btnSolucao);
+        btSolucao.setOnClickListener(this);
     }
 
+
+    @Override
+    public void onClick(View v) {
+        Intent itSolucao = new Intent(this, PensaoSolucaoActivity.class);
+        startActivity(itSolucao);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

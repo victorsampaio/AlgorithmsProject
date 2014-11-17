@@ -28,6 +28,10 @@
             android:name=".pensao.PensaoActivity"
             android:label="@string/title_activity_pensao" >
         </activity>
+        <activity
+            android:name=".pensao.PensaoSolucaoActivity"
+            android:label="@string/title_activity_pensao_solucao" >
+        </activity>
     </application>
 
 </manifest>

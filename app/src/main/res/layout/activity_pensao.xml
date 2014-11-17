@@ -13,7 +13,16 @@
         android:layout_height="wrap_content"
         android:text="O segundo algoritmo será escrito visando a atender às necessidades de uma pensão.Nessa pensão só são aceitas mulheres e crianças. Assim precisamos escrever um algoritmo que, receba como entrada o sexo (M ou F) da pessoa e a idade da mesma e imprima uma mensagem informando se a pessoa é aceita ou não na pensão. Considere como crianças pessoas de até 12 anos de idade.
 "
-        android:id="@+id/textView2"
+        android:id="@+id/textViewSexo"
         android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLUÇÃO"
+        android:id="@+id/btnSolucao"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
