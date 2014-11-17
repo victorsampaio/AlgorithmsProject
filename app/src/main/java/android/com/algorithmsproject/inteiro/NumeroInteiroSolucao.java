@@ -40,13 +40,13 @@ public class NumeroInteiroSolucao extends Activity implements View.OnClickListen
 
         if (numberOne < numberTwo && numberOne < numberThree){
             TextView mostraInteiro = (TextView)findViewById(R.id.txvNumInteiro);
-            mostraInteiro.setText("Os maiores são " + numberTwo + " e " + numberThree );
+            mostraInteiro.setText("Os maiores são " + numberTwo + " e " + numberThree);
         } else if (numberTwo < numberOne && numberTwo < numberThree){
             TextView mostraInteiro = (TextView)findViewById(R.id.txvNumInteiro);
-            mostraInteiro.setText("Os maiores são " + numberOne + " e " + numberThree );
+            mostraInteiro.setText("Os maiores são " + numberOne + " e " + numberThree);
         }else if (numberThree < numberOne && numberThree < numberTwo){
             TextView mostraInteiro = (TextView)findViewById(R.id.txvNumInteiro);
-            mostraInteiro.setText("Os maiores são " + numberOne + " e " + numberTwo );
+            mostraInteiro.setText("Os maiores são " + numberOne + " e " + numberTwo);
         }
     }
 
