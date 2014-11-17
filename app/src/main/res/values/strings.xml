@@ -8,5 +8,7 @@
     <string name="title_activity_inss_solucao">InssSolucaoActivity</string>
     <string name="title_activity_pensao">PensaoActivity</string>
     <string name="title_activity_pensao_solucao">PensaoSolucaoActivity</string>
+    <string name="title_activity_numero_inteiro">NumeroInteiro</string>
+    <string name="title_activity_numero_inteiro_solucao">NumeroInteiroSolucao</string>
 
 </resources>

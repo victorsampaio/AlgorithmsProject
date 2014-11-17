@@ -3,6 +3,7 @@ package android.com.algorithmsproject;
 import android.app.Activity;
 import android.app.ListActivity;
 import android.com.algorithmsproject.inss.InssProject;
+import android.com.algorithmsproject.inteiro.NumeroInteiro;
 import android.com.algorithmsproject.pensao.PensaoActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ import android.widget.ListView;
 
 public class AlgorithmProjectMainActivity extends ListActivity {
 
-    private static final String[] options = new String[]{"1 - INSS", "2 - PENSAO", "3 - ", "Exit"};
+    private static final String[] options = new String[]{"1 - INSS", "2 - PENSAO", "3 - Numero Inteiro", "Exit"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class AlgorithmProjectMainActivity extends ListActivity {
                     startActivity(new Intent(this, PensaoActivity.class));
                 break;
             case 2:
-
+                    startActivity(new Intent(this, NumeroInteiro.class));
                 break;
             case 3:
                     finish();

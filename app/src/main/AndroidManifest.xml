@@ -32,6 +32,14 @@
             android:name=".pensao.PensaoSolucaoActivity"
             android:label="@string/title_activity_pensao_solucao" >
         </activity>
+        <activity
+            android:name=".inteiro.NumeroInteiro"
+            android:label="@string/title_activity_numero_inteiro" >
+        </activity>
+        <activity
+            android:name=".inteiro.NumeroInteiroSolucao"
+            android:label="@string/title_activity_numero_inteiro_solucao" >
+        </activity>
     </application>
 
 </manifest>
