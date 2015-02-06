@@ -5,8 +5,10 @@ import android.app.ListActivity;
 import android.com.algorithmsproject.inss.InssProject;
 import android.com.algorithmsproject.inteiro.NumeroInteiro;
 import android.com.algorithmsproject.pensao.PensaoActivity;
+import android.com.algorithmsproject.personalinfos.PersonalInfosActivity;
 import android.com.algorithmsproject.readNumber.ReadNumberActivity;
 import android.com.algorithmsproject.temperature.TemperatureActivity;
+import android.com.algorithmsproject.triangle.TriangleActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,7 +21,8 @@ import android.widget.ListView;
 public class AlgorithmProjectMainActivity extends ListActivity {
 
     private static final String[] options = new String[]{"1 - INSS", "2 - PENSAO", "3 - Numero Inteiro",
-            "4 - Media", "5 - Temperatura", "Exit"};
+            "4 - Media", "5 - Temperatura", "6 - Info Pessoal", "7 - Triangulo", "8 - ", "9 - ",
+            "10 - ", "Exit"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,24 @@ public class AlgorithmProjectMainActivity extends ListActivity {
                 startActivity(new Intent(this, TemperatureActivity.class));
                 break;
             case 5:
+                startActivity(new Intent(this, PersonalInfosActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(this, TriangleActivity.class));
+                break;
+            case 7:
+
+                break;
+            case 8:
+                //startActivity(new Intent(this, TriangleActivity.class));
+                break;
+            case 9:
+
+                break;
+            case 10:
+                startActivity(new Intent(this, TriangleActivity.class));
+                break;
+            case 11:
                 finish();
                 break;
 

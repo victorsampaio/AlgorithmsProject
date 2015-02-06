@@ -48,6 +48,18 @@
             android:name=".temperature.TemperatureActivity"
             android:label="@string/title_activity_temperature" >
         </activity>
+        <activity
+            android:name=".personalinfos.PersonalInfosActivity"
+            android:label="@string/title_activity_personal_infos" >
+        </activity>
+        <activity
+            android:name=".triangle.TriangleActivity"
+            android:label="@string/title_activity_triangle" >
+        </activity>
+        <activity
+            android:name=".preco.PrecoActivity"
+            android:label="@string/title_activity_preco" >
+        </activity>
     </application>
 
 </manifest>

@@ -12,5 +12,8 @@
     <string name="title_activity_numero_inteiro_solucao">NumeroInteiroSolucao</string>
     <string name="title_activity_read_number">ReadNumberActivity</string>
     <string name="title_activity_temperature">TemperatureActivity</string>
+    <string name="title_activity_personal_infos">PersonalInfosActivity</string>
+    <string name="title_activity_triangle">TriangleActivity</string>
+    <string name="title_activity_preco">PrecoActivity</string>
 
 </resources>
