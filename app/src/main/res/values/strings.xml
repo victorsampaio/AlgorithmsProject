@@ -10,5 +10,7 @@
     <string name="title_activity_pensao_solucao">PensaoSolucaoActivity</string>
     <string name="title_activity_numero_inteiro">NumeroInteiro</string>
     <string name="title_activity_numero_inteiro_solucao">NumeroInteiroSolucao</string>
+    <string name="title_activity_read_number">ReadNumberActivity</string>
+    <string name="title_activity_temperature">TemperatureActivity</string>
 
 </resources>

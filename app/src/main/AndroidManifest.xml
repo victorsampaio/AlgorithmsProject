@@ -40,6 +40,14 @@
             android:name=".inteiro.NumeroInteiroSolucao"
             android:label="@string/title_activity_numero_inteiro_solucao" >
         </activity>
+        <activity
+            android:name=".readNumber.ReadNumberActivity"
+            android:label="@string/title_activity_read_number" >
+        </activity>
+        <activity
+            android:name=".temperature.TemperatureActivity"
+            android:label="@string/title_activity_temperature" >
+        </activity>
     </application>
 
 </manifest>

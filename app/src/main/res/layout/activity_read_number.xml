@@ -6,16 +6,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="android.com.algorithmsproject.inteiro.NumeroInteiroSolucao" >
+    tools:context="android.com.algorithmsproject.readNumber.ReadNumberActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Numero Inteiro Solução"
+        android:text="Faça um algoritmo para ler três números inteiros e escrever a média dos números lidos."
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,14 +22,15 @@
         android:text="Primeiro Numero"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/edtNumero1"
+        android:id="@+id/firstNumber"
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true" />
 
@@ -39,15 +39,15 @@
         android:layout_height="wrap_content"
         android:text="Segundo Numero"
         android:id="@+id/textView3"
-        android:layout_below="@+id/edtNumero1"
+        android:layout_below="@+id/firstNumber"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="phone"
         android:ems="10"
-        android:id="@+id/edtNumero2"
+        android:id="@+id/secondNumber"
         android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true" />
 
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:text="Terceiro Numero"
         android:id="@+id/txvTempCelsius"
-        android:layout_below="@+id/edtNumero2"
+        android:layout_below="@+id/secondNumber"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/edtNumero3"
+        android:id="@+id/thirdNumber"
         android:layout_below="@+id/txvTempCelsius"
         android:layout_alignParentStart="true" />
 
@@ -72,21 +72,16 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Verificar Numeros"
-        android:id="@+id/btnInteiro"
-        android:layout_below="@+id/edtNumero3"
-        android:layout_alignStart="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:text="Calc"
+        android:id="@+id/btnCalc"
+        android:layout_below="@+id/thirdNumber"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Numeros:"
-        android:id="@+id/txvNumInteiro"
-        android:layout_below="@+id/btnInteiro"
-        android:layout_alignStart="@+id/btnInteiro"
-        android:layout_marginTop="49dp"
-        android:layout_alignEnd="@+id/btnInteiro" />
-
+        android:text="Media: "
+        android:id="@+id/txwResult"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignBottom="@+id/btnCalc" />
 </RelativeLayout>

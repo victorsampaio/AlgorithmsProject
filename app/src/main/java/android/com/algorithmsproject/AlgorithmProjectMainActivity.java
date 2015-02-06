@@ -5,6 +5,8 @@ import android.app.ListActivity;
 import android.com.algorithmsproject.inss.InssProject;
 import android.com.algorithmsproject.inteiro.NumeroInteiro;
 import android.com.algorithmsproject.pensao.PensaoActivity;
+import android.com.algorithmsproject.readNumber.ReadNumberActivity;
+import android.com.algorithmsproject.temperature.TemperatureActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,7 +18,8 @@ import android.widget.ListView;
 
 public class AlgorithmProjectMainActivity extends ListActivity {
 
-    private static final String[] options = new String[]{"1 - INSS", "2 - PENSAO", "3 - Numero Inteiro", "Exit"};
+    private static final String[] options = new String[]{"1 - INSS", "2 - PENSAO", "3 - Numero Inteiro",
+            "4 - Media", "5 - Temperatura", "Exit"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +44,15 @@ public class AlgorithmProjectMainActivity extends ListActivity {
                     startActivity(new Intent(this, NumeroInteiro.class));
                 break;
             case 3:
-                    finish();
+                    startActivity(new Intent(this, ReadNumberActivity.class));
                 break;
+            case 4:
+                startActivity(new Intent(this, TemperatureActivity.class));
+                break;
+            case 5:
+                finish();
+                break;
+
         }
     }
 
